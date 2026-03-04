@@ -48,10 +48,10 @@ let package = Package(
             checksum: "d83e906688a18e0d7aabd57d5872933f09ba44fbe8ccf8290dc3797a4e1d985c"),
         .binaryTarget(name: "AmityUIKit",
             url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityUIKit.xcframework.zip",
-            checksum: "2724f0760f4d3532047218622ad96d1d770bf217dc766e2d3dea014425714ee5"),
+            checksum: "c43059bbbf4ff907ef19f2edbb1ca0b6dd846797457f5c0981197ea51978d1f3"),
         .binaryTarget(name: "AmityUIKitLiveStream",
             url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityUIKitLiveStream.xcframework.zip",
-            checksum: "97a63ca072483898fb9f18b867dc36cca9295aa3b057f7d918cd79444d630823"),
+            checksum: "a118311a6d2b052385c7562ea13f4db070dac0777a9bc854d2da4deee8d70813"),
 
         // ── Amity SDK dependencies ─────────────────────────────────────
         .binaryTarget(name: "AmitySDK",
