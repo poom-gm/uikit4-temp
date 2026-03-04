@@ -1,0 +1,49 @@
+// swift-tools-version: 5.7
+import PackageDescription
+
+let package = Package(
+    name: "AmityUIKit",
+    platforms: [.iOS(.v15)],
+    products: [
+        .library(name: "AmityUIKit4",          targets: ["AmityUIKit4"]),
+        .library(name: "AmityUIKit",           targets: ["AmityUIKit"]),
+        .library(name: "AmityUIKitLiveStream", targets: ["AmityUIKitLiveStream"]),
+    ],
+    targets: [
+        // ── Built from source ──────────────────────────────────────────
+        .binaryTarget(name: "AmityUIKit4",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityUIKit4.xcframework.zip",
+            checksum: "d83e906688a18e0d7aabd57d5872933f09ba44fbe8ccf8290dc3797a4e1d985c"),
+        .binaryTarget(name: "AmityUIKit",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityUIKit.xcframework.zip",
+            checksum: "2724f0760f4d3532047218622ad96d1d770bf217dc766e2d3dea014425714ee5"),
+        .binaryTarget(name: "AmityUIKitLiveStream",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityUIKitLiveStream.xcframework.zip",
+            checksum: "97a63ca072483898fb9f18b867dc36cca9295aa3b057f7d918cd79444d630823"),
+        // ── Amity SDK dependencies ─────────────────────────────────────
+        .binaryTarget(name: "AmitySDK",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmitySDK.xcframework.zip",
+            checksum: "fac37a816d6664a66dfcf8c1e28a0f99e23d9489ef02204c3663cb124acc8b69"),
+        .binaryTarget(name: "Realm",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/Realm.xcframework.zip",
+            checksum: "182e173759f078d52ba847277ae519ed4888733eed905ff51186a58c8095da99"),
+        .binaryTarget(name: "RealmSwift",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/RealmSwift.xcframework.zip",
+            checksum: "6c4d71337b9c143df37c1af069befc0ebfa7cbc706c914f4a012f2b31d4e1536"),
+        .binaryTarget(name: "AmityLiveVideoBroadcastKit",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityLiveVideoBroadcastKit.xcframework.zip",
+            checksum: "537234afd33b39b635365f157b343ef792c4c7ba2960577ce0a1ff9e99760df9"),
+        .binaryTarget(name: "AmityVideoPlayerKit",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityVideoPlayerKit.xcframework.zip",
+            checksum: "b1b88ad23b91d6b92adcf0a273f6421e27339741de4477d4c0f932e51b645bec"),
+        .binaryTarget(name: "AmityLiveKit",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityLiveKit.xcframework.zip",
+            checksum: "172ac30d4a73867fa8a6bea70954ddda5ff3810ec4b197d0d216bf82601fa475"),
+        .binaryTarget(name: "LiveKitWebRTC",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/LiveKitWebRTC.xcframework.zip",
+            checksum: "d0f66517259635ca3e125735255934581c624925c069b8ad1fa89782196d2d07"),
+        .binaryTarget(name: "MobileVLCKit",
+            url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/MobileVLCKit.xcframework.zip",
+            checksum: "4d2c943e7221db424a2128249c007c5f7642c49adc70f49525502a1ee57423e7"),
+    ]
+)
