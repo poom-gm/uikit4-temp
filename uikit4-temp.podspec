@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :http => "https://dl.dropboxusercontent.com/scl/fi/a2j6n42eeyawmi1b8kxxd/release.zip?rlkey=5p28t1eeftixee1iol09n4uj3&st=i7l406yu&dl=0" }
+  spec.source = { :http => "https://dl.dropboxusercontent.com/scl/fi/a2j6n42eeyawmi1b8kxxd/release.zip?rlkey=5p28t1eeftixee1iol09n4uj3&st=vxbd3xer&dl=0" }
   spec.vendored_frameworks = 'release/AmityLiveVideoBroadcastKit.xcframework', 'release/AmitySDK.xcframework', 'release/AmityUIKit.xcframework', 'release/AmityUIKit4.xcframework', 'release/AmityUIKitLiveStream.xcframework', 'release/AmityVideoPlayerKit.xcframework', 'release/Realm.xcframework', 'release/RealmSwift.xcframework'
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
