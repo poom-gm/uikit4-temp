@@ -5,11 +5,43 @@ let package = Package(
     name: "AmityUIKit",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "AmityUIKit4",          targets: ["AmityUIKit4"]),
-        .library(name: "AmityUIKit",           targets: ["AmityUIKit"]),
-        .library(name: "AmityUIKitLiveStream", targets: ["AmityUIKitLiveStream"]),
+        .library(name: "AmityUIKit4",          targets: ["AmityUIKit4Wrapper"]),
+        .library(name: "AmityUIKit",           targets: ["AmityUIKitWrapper"]),
+        .library(name: "AmityUIKitLiveStream", targets: ["AmityUIKitLiveStreamWrapper"]),
     ],
     targets: [
+
+        // ── Wrapper source targets (declare transitive deps for SPM) ───
+        .target(
+            name: "AmityUIKit4Wrapper",
+            dependencies: [
+                "AmityUIKit4",
+                "AmitySDK", "Realm", "RealmSwift",
+                "AmityVideoPlayerKit", "AmityLiveKit",
+                "LiveKitWebRTC", "MobileVLCKit",
+            ],
+            path: "Sources/AmityUIKit4Wrapper"
+        ),
+        .target(
+            name: "AmityUIKitWrapper",
+            dependencies: [
+                "AmityUIKit",
+                "AmitySDK", "Realm", "RealmSwift",
+                "AmityVideoPlayerKit", "MobileVLCKit",
+            ],
+            path: "Sources/AmityUIKitWrapper"
+        ),
+        .target(
+            name: "AmityUIKitLiveStreamWrapper",
+            dependencies: [
+                "AmityUIKitLiveStream",
+                "AmitySDK", "Realm", "RealmSwift",
+                "AmityLiveVideoBroadcastKit", "AmityVideoPlayerKit",
+                "AmityLiveKit", "LiveKitWebRTC", "MobileVLCKit",
+            ],
+            path: "Sources/AmityUIKitLiveStreamWrapper"
+        ),
+
         // ── Built from source ──────────────────────────────────────────
         .binaryTarget(name: "AmityUIKit4",
             url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityUIKit4.xcframework.zip",
@@ -20,6 +52,7 @@ let package = Package(
         .binaryTarget(name: "AmityUIKitLiveStream",
             url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmityUIKitLiveStream.xcframework.zip",
             checksum: "97a63ca072483898fb9f18b867dc36cca9295aa3b057f7d918cd79444d630823"),
+
         // ── Amity SDK dependencies ─────────────────────────────────────
         .binaryTarget(name: "AmitySDK",
             url: "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.0/AmitySDK.xcframework.zip",
