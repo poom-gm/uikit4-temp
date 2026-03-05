@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "uikit4-temp"
-  spec.version      = "4.0.8"
+  spec.version      = "1.0.1"
   spec.summary      = "Amity UIKit for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -82,9 +82,17 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :http => "https://storage.googleapis.com/test-amity/release.zip" }
-  spec.vendored_frameworks = 'release/AmityLiveVideoBroadcastKit.xcframework', 'release/AmityLiveKit.xcframework', 'release/AmitySDK.xcframework', 'release/AmityUIKit.xcframework', 'release/AmityUIKit4.xcframework', 'release/AmityUIKitLiveStream.xcframework', 'release/AmityVideoPlayerKit.xcframework', 'release/LiveKitWebRTC.xcframework', 'release/MobileVLCKit.xcframework'
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.source = { :http => "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.1/amity-uikit.zip" }
+  spec.vendored_frameworks =
+    'AmityUIKit4.xcframework',
+    'AmityUIKit.xcframework',
+    'AmityUIKitLiveStream.xcframework',
+    'AmitySDK.xcframework',
+    'AmityLiveVideoBroadcastKit.xcframework',
+    'AmityVideoPlayerKit.xcframework',
+    'AmityLiveKit.xcframework',
+    'LiveKitWebRTC.xcframework',
+    'MobileVLCKit.xcframework'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
