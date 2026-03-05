@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "uikit4-temp"
-  spec.version      = "1.0.1"
+  spec.version      = "4.0.9"
   spec.summary      = "Amity UIKit for iOS."
 
   # This description is used to generate tags and improve search results.
