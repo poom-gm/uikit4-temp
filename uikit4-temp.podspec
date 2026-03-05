@@ -82,15 +82,13 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :http => "https://github.com/poom-gm/uikit4-temp/releases/download/1.0.1/amity-uikit.zip" }
+  spec.source = { :http => "https://storage.googleapis.com/test-amity/release.zip" }
   spec.vendored_frameworks =
     'AmityUIKit4.xcframework',
     'AmityUIKit.xcframework',
     'AmityUIKitLiveStream.xcframework',
     'AmitySDK.xcframework',
-    'AmityLiveVideoBroadcastKit.xcframework',
     'AmityVideoPlayerKit.xcframework',
-    'AmityLiveKit.xcframework',
     'LiveKitWebRTC.xcframework',
     'MobileVLCKit.xcframework'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
