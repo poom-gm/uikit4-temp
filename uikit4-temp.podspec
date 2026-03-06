@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "uikit4-temp"
-  spec.version      = "4.0.13"
+  spec.version      = "4.0.14"
   spec.summary      = "Amity UIKit for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.13/release.zip" }
+  spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.14/release.zip" }
   spec.vendored_frameworks = [                                                                      
     'release/AmityUIKit4.xcframework',                              
     'release/AmitySDK.xcframework',                                                                      
