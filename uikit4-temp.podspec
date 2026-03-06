@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "uikit4-temp"
-  spec.version      = "4.0.11"
+  spec.version      = "4.0.12"
   spec.summary      = "Amity UIKit for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -82,16 +82,21 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.11/release.zip" }
-  spec.vendored_frameworks =
-    'release/AmityUIKit4.xcframework',
-    'release/AmityUIKit.xcframework',
-    'release/AmityUIKitLiveStream.xcframework',
-    'release/AmitySDK.xcframework',
-    'release/AmityVideoPlayerKit.xcframework',
-    'release/LiveKitWebRTC.xcframework',
-    'release/MobileVLCKit.xcframework'
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.12/release.zip" }
+  spec.vendored_frameworks = [                                                                      
+    'AmityUIKit4.xcframework',                              
+    'AmitySDK.xcframework',                                                                      
+    'AmityLiveKit.xcframework',                             
+    'LiveKitWebRTC.xcframework',
+    'AmityVideoPlayerKit.xcframework',
+    'AmityLiveVideoBroadcastKit.xcframework',
+    'MobileVLCKit.xcframework',
+    'AmityUIKitLiveStream.xcframework',
+    'AmityUIKit.xcframework'
+  ]
+  spec.dependency 'Realm'
+  spec.dependency 'RealmSwift'
+  # ――― Source Code ――――――――――――――――――――――――――――――――――――――――――――――― ―――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
   #  giving a folder will include any swift, h, m, mm, c & cpp files.
