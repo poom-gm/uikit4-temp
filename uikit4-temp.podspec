@@ -84,15 +84,15 @@ Pod::Spec.new do |spec|
 
   spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.12/release.zip" }
   spec.vendored_frameworks = [                                                                      
-    'AmityUIKit4.xcframework',                              
-    'AmitySDK.xcframework',                                                                      
-    'AmityLiveKit.xcframework',                             
-    'LiveKitWebRTC.xcframework',
-    'AmityVideoPlayerKit.xcframework',
-    'AmityLiveVideoBroadcastKit.xcframework',
-    'MobileVLCKit.xcframework',
-    'AmityUIKitLiveStream.xcframework',
-    'AmityUIKit.xcframework'
+    'release/AmityUIKit4.xcframework',                              
+    'release/AmitySDK.xcframework',                                                                      
+    'release/AmityLiveKit.xcframework',                             
+    'release/LiveKitWebRTC.xcframework',
+    'release/AmityVideoPlayerKit.xcframework',
+    'release/AmityLiveVideoBroadcastKit.xcframework',
+    'release/MobileVLCKit.xcframework',
+    'release/AmityUIKitLiveStream.xcframework',
+    'release/AmityUIKit.xcframework'
   ]
   spec.dependency 'Realm'
   spec.dependency 'RealmSwift'
