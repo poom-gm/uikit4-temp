@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "uikit4-temp"
-  spec.version      = "4.0.14"
+  spec.version      = "4.0.15"
   spec.summary      = "Amity UIKit for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -94,8 +94,9 @@ Pod::Spec.new do |spec|
     'release/AmityUIKitLiveStream.xcframework',
     'release/AmityUIKit.xcframework'
   ]
-  spec.dependency 'Realm'
-  spec.dependency 'RealmSwift'
+  # spec.dependency 'Realm'
+  # spec.dependency 'RealmSwift'
+
   # ――― Source Code ――――――――――――――――――――――――――――――――――――――――――――――― ―――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
