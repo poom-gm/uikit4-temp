@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.10/release.zip" }
+  spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.11/release.zip" }
   spec.vendored_frameworks =
     'release/AmityUIKit4.xcframework',
     'release/AmityUIKit.xcframework',
