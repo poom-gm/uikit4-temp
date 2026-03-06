@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "uikit4-temp"
-  spec.version      = "4.0.10"
+  spec.version      = "4.0.11"
   spec.summary      = "Amity UIKit for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -84,13 +84,13 @@ Pod::Spec.new do |spec|
 
   spec.source = { :http => "https://storage.googleapis.com/test-amity/4.0.10/release.zip" }
   spec.vendored_frameworks =
-    'AmityUIKit4.xcframework',
-    'AmityUIKit.xcframework',
-    'AmityUIKitLiveStream.xcframework',
-    'AmitySDK.xcframework',
-    'AmityVideoPlayerKit.xcframework',
-    'LiveKitWebRTC.xcframework',
-    'MobileVLCKit.xcframework'
+    'release/AmityUIKit4.xcframework',
+    'release/AmityUIKit.xcframework',
+    'release/AmityUIKitLiveStream.xcframework',
+    'release/AmitySDK.xcframework',
+    'release/AmityVideoPlayerKit.xcframework',
+    'release/LiveKitWebRTC.xcframework',
+    'release/MobileVLCKit.xcframework'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
